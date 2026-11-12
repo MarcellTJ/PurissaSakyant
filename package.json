@@ -1,0 +1,27 @@
+{
+  "name": "purissa-sakyant",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node scripts/build-worker.mjs",
+    "preview": "node scripts/local-preview.mjs",
+    "format": "prettier --write src vite.config.js scripts",
+    "db:generate": "drizzle-kit generate",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router-dom": "7.18.5",
+    "drizzle-orm": "0.45.4"
+  },
+  "devDependencies": {
+    "vite": "8.3.7",
+    "@vitejs/plugin-react": "6.3.0",
+    "prettier": "3.9.10",
+    "drizzle-kit": "0.31.11",
+    "miniflare": "4.20260730.0"
+  }
+}

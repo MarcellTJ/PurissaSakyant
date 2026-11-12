@@ -1,0 +1,26 @@
+{
+  "id": "3c917bfd-67b6-4e17-9607-6419e5cf5cc8",
+  "title": "Special Big Sakyant Event",
+  "hook": "Sak Yant & Blessing Saney bersama Ajahn Fhuk \u00b7 Jakarta Barat.",
+  "caption": "Special Big Sakyant Event bersama Ajahn Fhuk. Jelajahi sorotan Sak Yant & Blessing Saney di Jakarta Barat.",
+  "startDate": "2025-12-05",
+  "endDate": "2025-12-07",
+  "status": "published",
+  "images": [
+    {
+      "id": "140e4f90-b7e8-4758-8248-8ee647aca355",
+      "url": "/assets/events/master-handpoke-session.jpg",
+      "caption": "More than ink. A sacred connection."
+    },
+    {
+      "id": "e1398c9a-3919-4054-802e-c962847087bb",
+      "url": "/assets/events/candle-blessing-ceremony.jpg",
+      "caption": "Ancient wisdom. Personal meaning."
+    },
+    {
+      "id": "ceac67e4-5ec0-4c80-bc5f-5e2035698b2c",
+      "url": "/assets/gallery/13-dense-shoulder-panel.jpg",
+      "caption": "Every line. A deeper meaning."
+    }
+  ]
+}

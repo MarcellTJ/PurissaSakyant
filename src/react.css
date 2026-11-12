@@ -1,0 +1,845 @@
+/* React owns route and carousel state. Keep the shell mounted. */
+@view-transition {
+  navigation: none;
+}
+main.route-content {
+  animation: none;
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+main.route-content.route-exit {
+  opacity: 0;
+  transform: translateY(-3px);
+}
+main.route-content.route-enter {
+  animation: react-route-enter 360ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+@keyframes react-route-enter {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#root {
+  min-height: 100svh;
+}
+.route-content:focus {
+  outline: none;
+}
+/* Date labels must never overflow into event descriptions. */
+.event-list-row {
+  grid-template-columns: minmax(150px, 0.28fr) minmax(0, 1fr) 28px;
+  gap: 32px;
+  align-items: start;
+}
+.event-list-date,
+.event-list-detail {
+  min-width: 0;
+}
+.event-list-date strong {
+  font-size: 28px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.event-list-date {
+  padding-top: 5px;
+}
+.event-list-detail h3 {
+  margin-top: 10px;
+  line-height: 1.2;
+}
+.event-row-arrow {
+  align-self: center;
+}
+.collection-carousel .gallery-page {
+  display: grid;
+  min-width: 0;
+}
+.gallery-page .art {
+  min-width: 0;
+}
+.art img {
+  aspect-ratio: 4/5;
+}
+.gallery-page .art span {
+  font-size: 23px;
+  line-height: 1.25;
+  padding-right: 24px;
+  overflow-wrap: anywhere;
+}
+.gallery-navigation .slide-arrow {
+  top: -290px;
+}
+.gallery-page .art b {
+  top: 10px;
+  bottom: auto;
+}
+.page-intro + .collection {
+  padding-top: 55px;
+}
+@media (max-width: 900px) {
+  .gallery-navigation .slide-arrow {
+    top: -255px;
+  }
+}
+@media (max-width: 760px) {
+  .event-list-row {
+    grid-template-columns: minmax(0, 1fr) 24px;
+    gap: 16px;
+    padding: 28px 0;
+  }
+  .event-list-date {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding: 0;
+  }
+  .event-list-date strong {
+    font-size: 25px;
+    margin: 0;
+    overflow-wrap: normal;
+  }
+  .event-list-detail {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .event-row-arrow {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .event-list-date > span {
+    font-size: 10px;
+  }
+  .event-tag {
+    font-size: 9px;
+  }
+  .event-list-row h3 {
+    font-size: 29px;
+  }
+  .event-list-row p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+@media (max-width: 620px) {
+  .gallery-page .art span {
+    font-size: 16px;
+    padding-right: 0;
+  }
+  .gallery-navigation .slide-arrow {
+    top: -165px;
+  }
+  .gallery-page .art img {
+    height: 190px;
+  }
+  .event-list-row {
+    padding: 25px 0;
+  }
+  .slide-dots button {
+    width: 26px;
+    height: 36px;
+  }
+  .slide-arrow {
+    min-width: 40px;
+  }
+  .slide-pause {
+    width: 36px;
+    height: 36px;
+  }
+  .collection .slide-pagination {
+    gap: 5px;
+  }
+  .intro-copy .actions {
+    row-gap: 22px;
+  }
+  .footer-links a {
+    padding: 5px 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  main.route-content {
+    transition: none;
+  }
+  main.route-content.route-exit {
+    opacity: 1;
+    transform: none;
+  }
+  main.route-content.route-enter {
+    animation: none;
+  }
+  .hero-slide,
+  .gallery-page {
+    transition: none !important;
+  }
+}
+
+/* Booking channels sit together; the social profiles live in their own page. */
+.brand-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+  filter: none;
+}
+.mail-icon {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  color: var(--gold);
+}
+.booking-actions {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.booking-actions .button {
+  gap: 14px;
+  min-width: 235px;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.booking-actions .brand-icon {
+  width: 22px;
+  height: 22px;
+}
+.booking-actions .email-booking {
+  color: var(--text);
+  border-color: #c9ab7359;
+  background: #c9ab7305;
+}
+.booking-actions .email-booking:hover {
+  background: #c9ab7314;
+  border-color: var(--gold);
+}
+.booking .booking-email-note {
+  margin: 18px auto 0;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #a4aa9b;
+  max-width: 460px;
+}
+/* Explicit footer grid prevents the old single-row squeeze. */
+footer.site-footer {
+  display: block;
+  padding: 38px 6% 22px;
+  border-top: 1px solid var(--line);
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 36px;
+}
+.site-footer .brand {
+  display: block;
+}
+.site-footer .logo {
+  width: 160px;
+  height: 70px;
+  object-fit: contain;
+}
+.site-footer .footer-navigation {
+  display: flex;
+  position: static;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+}
+.site-footer .footer-navigation a {
+  padding: 10px 0;
+  font-size: 12px;
+  color: #b7bdb0;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.site-footer .footer-navigation a:hover {
+  color: var(--gold);
+}
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  color: var(--text);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.footer-socials a:hover {
+  color: var(--gold);
+}
+.footer-socials .brand-icon {
+  width: 23px;
+  height: 23px;
+}
+.footer-external {
+  color: var(--gold);
+  font-size: 13px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--line);
+  margin-top: 27px;
+  padding-top: 20px;
+  color: #8f9789;
+  font-size: 10px;
+  line-height: 1.8;
+}
+/* Socials and message composition, in Purissa's established palette. */
+.socials-intro {
+  display: grid;
+  grid-template-columns: 1.13fr 1fr;
+  gap: 9%;
+  align-items: center;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.socials-intro h1 {
+  font-size: clamp(56px, 5.4vw, 80px);
+  line-height: 1.06;
+  letter-spacing: -2px;
+}
+.socials-intro-copy > p {
+  font-size: 15px;
+  max-width: 510px;
+  margin: 30px 0;
+  line-height: 1.9;
+}
+.social-channels {
+  display: grid;
+  gap: 14px;
+}
+.social-channel {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  min-width: 0;
+  padding: 23px 25px;
+  border: 1px solid #c9ab7329;
+  background: linear-gradient(135deg, #c9ab7308, transparent);
+  border-radius: 12px;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+.social-channel:hover {
+  border-color: #c9ab7370;
+  background: #c9ab730d;
+}
+.social-channel > .brand-icon {
+  width: 38px;
+  height: 38px;
+}
+.social-channel > div {
+  min-width: 0;
+}
+.channel-eyebrow {
+  color: var(--gold);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+}
+.social-channel h2 {
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.4;
+  margin: 7px 0 4px;
+}
+.social-channel p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.channel-arrow {
+  margin-left: auto;
+  color: var(--gold);
+  font-size: 21px;
+}
+.email-section {
+  display: grid;
+  grid-template-columns: 0.82fr 1.25fr;
+  gap: 9%;
+  align-items: start;
+  border-top: 1px solid var(--line);
+  padding-top: 95px;
+  padding-bottom: 110px;
+}
+.email-intro h2 {
+  font-size: clamp(45px, 4.5vw, 64px);
+  line-height: 1.08;
+}
+.email-intro > p {
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 28px 0;
+}
+.email-availability {
+  display: flex;
+  gap: 15px;
+  border-top: 1px solid #c9ab732e;
+  padding-top: 25px;
+  margin-top: 32px;
+}
+.email-availability > .mail-icon {
+  margin-top: 3px;
+}
+.email-availability strong {
+  font-size: 13px;
+  font-weight: 500;
+  color: #d7c29d;
+}
+.email-availability p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 10px 0 0;
+  color: #a9b09f;
+}
+.email-intro > .text-link {
+  margin-top: 26px;
+}
+.email-form {
+  border: 1px solid #c9ab733d;
+  border-radius: 15px;
+  background: #0e110e;
+  min-width: 0;
+  overflow: hidden;
+}
+.email-form-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 22px 28px;
+  border-bottom: 1px solid var(--line);
+  background: #ffffff02;
+}
+.email-form-heading h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+.email-form-heading > span {
+  font-size: 10px;
+  color: #9ba391;
+  margin-left: auto;
+}
+.email-form-fields {
+  padding: 28px;
+}
+.email-form-fields label {
+  display: block;
+  color: #d8ddcf;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.email-form-fields label > span:not(.field-optional) {
+  color: var(--gold);
+}
+.email-form-fields .field-optional {
+  font-size: 10px;
+  color: #929b88;
+  margin-left: 5px;
+}
+.email-form-fields > label,
+.form-two-columns {
+  margin-bottom: 22px;
+}
+.form-two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.email-form-fields input,
+.email-form-fields select,
+.email-form-fields textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #b0b69738;
+  border-radius: 6px;
+  background: #080b08;
+  color: var(--text);
+  font:
+    400 13px/1.6 Manrope,
+    Arial,
+    sans-serif;
+  padding: 13px 14px;
+  margin-top: 9px;
+  transition: border-color 0.2s;
+}
+.email-form-fields input:focus,
+.email-form-fields select:focus,
+.email-form-fields textarea:focus {
+  border-color: var(--gold);
+  outline: 2px solid #c9ab7326;
+  outline-offset: 2px;
+}
+.email-form-fields input::placeholder,
+.email-form-fields textarea::placeholder {
+  color: #747e6b;
+  opacity: 1;
+}
+.email-form-fields textarea {
+  min-height: 175px;
+  resize: vertical;
+}
+.email-form-actions {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 4px;
+}
+.email-form-actions .button {
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  gap: 25px;
+}
+.email-form-actions .send-email {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid #c9ab7360;
+  font-size: 11px;
+  padding: 17px 18px;
+}
+.email-form-actions .send-email:disabled {
+  color: #8d9584;
+  border-color: #9eaa8738;
+  cursor: not-allowed;
+}
+.email-form-fields .form-status {
+  color: #a8b19c;
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 18px 0 0;
+}
+.form-copy-help {
+  font-size: 12px;
+}
+@media (max-width: 1100px) {
+  header .nav-cta {
+    display: none;
+  }
+  .footer-top {
+    grid-template-columns: 160px 1fr;
+    gap: 20px 30px;
+  }
+  .site-footer .footer-navigation {
+    grid-column: 1/-1;
+    grid-row: 2;
+    justify-content: flex-start;
+    gap: 8px 28px;
+  }
+  .footer-socials {
+    justify-self: end;
+  }
+  .socials-intro,
+  .email-section {
+    gap: 6%;
+  }
+  .email-form-fields {
+    padding: 23px;
+  }
+  .form-two-columns {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .social-channel {
+    padding: 22px 20px;
+    gap: 16px;
+  }
+}
+@media (max-width: 820px) {
+  header {
+    justify-content: space-between;
+  }
+  header .menu {
+    display: block;
+    background: none;
+    color: var(--gold);
+    border: 0;
+    font-size: 23px;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    right: 0;
+    padding: 22px 7%;
+    background: #10120f;
+    border-bottom: 1px solid var(--line);
+    margin: 0;
+    gap: 8px;
+  }
+  header nav.open {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav a {
+    padding: 12px 0;
+  }
+  .socials-intro {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  .socials-intro-copy > p {
+    max-width: 600px;
+  }
+  .socials-intro {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .socials-intro h1 {
+    font-size: 65px;
+  }
+  .social-channels {
+    grid-template-columns: 1fr;
+  }
+  .email-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 65px;
+  }
+  .email-intro {
+    max-width: 600px;
+  }
+  .form-two-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 620px) {
+  header nav {
+    top: 80px;
+  }
+  .booking-actions {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 320px;
+    margin: auto;
+  }
+  .booking-actions .button {
+    min-width: 0;
+    min-height: 58px;
+  }
+  .booking .booking-email-note {
+    font-size: 11px;
+    max-width: 310px;
+  }
+  .footer-top {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .site-footer .brand {
+    grid-row: 1;
+  }
+  .site-footer .footer-navigation {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 20px;
+    justify-content: start;
+  }
+  .site-footer .footer-navigation a {
+    font-size: 12px;
+    padding: 10px 0;
+    white-space: normal;
+  }
+  .footer-socials {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .footer-bottom {
+    display: block;
+    margin-top: 25px;
+  }
+  .footer-bottom span {
+    display: block;
+  }
+  .footer-bottom span + span {
+    margin-top: 5px;
+  }
+  .socials-intro h1 {
+    font-size: 53px;
+    letter-spacing: -1.7px;
+  }
+  .socials-intro {
+    padding-top: 50px;
+    gap: 35px;
+  }
+  .socials-intro-copy > p {
+    font-size: 15px;
+  }
+  .social-channel {
+    padding: 20px 17px;
+    gap: 15px;
+  }
+  .social-channel > .brand-icon {
+    width: 33px;
+    height: 33px;
+  }
+  .social-channel h2 {
+    font-size: 19px;
+  }
+  .social-channel p {
+    font-size: 11px;
+  }
+  .email-intro h2 {
+    font-size: 49px;
+  }
+  .email-section {
+    padding-top: 55px;
+    padding-bottom: 65px;
+  }
+  .form-two-columns {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .email-form-fields {
+    padding: 21px 18px;
+  }
+  .email-form-heading {
+    padding: 20px 18px;
+  }
+  .email-form-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .email-form-actions .button {
+    justify-content: center;
+  }
+  .email-form-fields input,
+  .email-form-fields select,
+  .email-form-fields textarea {
+    font-size: 16px;
+  }
+  .channel-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1.3px;
+  }
+}
+
+.managed-event {
+  background: #0f100e;
+  border: 1px solid #35362c;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 28px 0 48px;
+}
+.managed-event-cover {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+.managed-event-placeholder {
+  height: 260px;
+  display: grid;
+  place-items: center;
+  color: #8e917f;
+  background: radial-gradient(ellipse at top, #25281c, #0e100c);
+  font-size: 14px;
+}
+.managed-event-content {
+  padding: clamp(25px, 4vw, 60px);
+}
+.managed-event h2 {
+  font-size: clamp(32px, 4vw, 56px);
+  margin: 20px 0;
+  overflow-wrap: anywhere;
+}
+.managed-event-hook {
+  font-size: 22px;
+  color: #d3bb83;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.managed-event-caption {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+  color: #aaa99d;
+  margin: 22px 0 30px;
+}
+.managed-event-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+.managed-event-gallery figure {
+  margin: 0;
+}
+.managed-event-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.managed-event-gallery figcaption,
+.image-note {
+  font-size: 13px;
+  color: #96998b;
+  line-height: 1.6;
+}
+.published-events {
+  padding-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .managed-event-cover {
+    height: 280px;
+  }
+  .managed-event-gallery {
+    grid-template-columns: 1fr;
+  }
+  .managed-event-hook {
+    font-size: 19px;
+  }
+}
+
+.lightbox-caption {
+  color: #eee7d7;
+  text-align: center;
+  max-width: 700px;
+  margin: 18px auto 0;
+  line-height: 1.6;
+  padding: 0 25px;
+}
+.lightbox-caption strong {
+  font-weight: 500;
+}
+.lightbox-caption p {
+  margin: 8px 0 0;
+  color: #aaa895;
+  white-space: pre-wrap;
+}

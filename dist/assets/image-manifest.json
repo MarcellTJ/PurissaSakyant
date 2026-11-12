@@ -1,0 +1,250 @@
+[
+  {
+    "file": "assets/brand/purissa-logo.jpg",
+    "used_on": [
+      "events.html",
+      "faq.html",
+      "gallery.html",
+      "index.html",
+      "sak-yant.html"
+    ],
+    "previous_names": [
+      "logo.jpg"
+    ]
+  },
+  {
+    "file": "assets/events/master-handpoke-session.jpg",
+    "used_on": [
+      "events.html"
+    ],
+    "previous_names": [
+      "master.jpg"
+    ]
+  },
+  {
+    "file": "assets/events/candle-blessing-ceremony.jpg",
+    "used_on": [
+      "events.html",
+      "index.html",
+      "sak-yant.html"
+    ],
+    "previous_names": [
+      "ritual.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/01-paired-leg-sak-yant.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-01.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/02-tiger-upper-arm.jpg",
+    "used_on": [
+      "gallery.html",
+      "index.html"
+    ],
+    "previous_names": [
+      "work-02.jpg",
+      "tiger.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/03-ornamental-leg-panel.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-03.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/04-vertical-side-torso.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-04.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/05-chest-sacred-symbols.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-05.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/06-standing-figure-upper-arm.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-06.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/07-red-winged-figure.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-07.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/08-radial-geometric-symbols.jpg",
+    "used_on": [
+      "gallery.html",
+      "index.html"
+    ],
+    "previous_names": [
+      "work-08.jpg",
+      "geometry.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/09-dragon-leg-panel.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-09.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/10-balanced-upper-back.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-10.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/11-neck-and-shoulder-script.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-11.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/12-small-upper-back-symbol.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-12.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/13-dense-shoulder-panel.jpg",
+    "used_on": [
+      "events.html",
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-13.jpg",
+      "hero.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/14-full-back-composition.jpg",
+    "used_on": [
+      "gallery.html",
+      "index.html"
+    ],
+    "previous_names": [
+      "work-14.jpg",
+      "back.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/15-vertical-spine-script.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-15.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/16-winged-back-composition.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-16.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/17-seated-figure-detail.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-17.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/18-script-forearm-sleeve.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-18.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/19-large-back-temple-panel.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-19.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/20-tiger-detail.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-20.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/21-circular-tiger-emblem.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-21.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/22-ganesha-detail.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-22.jpg"
+    ]
+  },
+  {
+    "file": "assets/gallery/23-ornamental-upper-arm.jpg",
+    "used_on": [
+      "gallery.html"
+    ],
+    "previous_names": [
+      "work-23.jpg"
+    ]
+  }
+]

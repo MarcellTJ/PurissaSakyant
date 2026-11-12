@@ -1,0 +1,227 @@
+[
+  {
+    "id": "home-intro",
+    "kind": "general",
+    "src": "/assets/events/candle-blessing-ceremony.jpg",
+    "title": "Beranda \u2014 Seni sakral",
+    "alt": "Suasana blessing dengan lilin di Purissa",
+    "caption": "TRADITION \u00b7 INTENTION \u00b7 CONNECTION",
+    "position": 0
+  },
+  {
+    "id": "sak-yant-philosophy",
+    "kind": "general",
+    "src": "/assets/events/candle-blessing-ceremony.jpg",
+    "title": "Sak Yant & Blessing \u2014 Rooted in Tradition",
+    "alt": "Suasana ritual dengan lilin di Purissa",
+    "caption": "01 / THE PHILOSOPHY",
+    "position": 1
+  },
+  {
+    "src": "/assets/gallery/01-paired-leg-sak-yant.jpg",
+    "alt": "Karya Sak Yant Purissa 01",
+    "id": "01-paired-leg-sak-yant",
+    "title": "Paired leg sak yant",
+    "kind": "gallery",
+    "caption": "",
+    "position": 0
+  },
+  {
+    "src": "/assets/gallery/02-tiger-upper-arm.jpg",
+    "alt": "Karya Sak Yant Purissa 02",
+    "id": "02-tiger-upper-arm",
+    "title": "Tiger upper arm",
+    "kind": "gallery",
+    "caption": "",
+    "position": 1
+  },
+  {
+    "src": "/assets/gallery/03-ornamental-leg-panel.jpg",
+    "alt": "Karya Sak Yant Purissa 03",
+    "id": "03-ornamental-leg-panel",
+    "title": "Ornamental leg panel",
+    "kind": "gallery",
+    "caption": "",
+    "position": 2
+  },
+  {
+    "src": "/assets/gallery/04-vertical-side-torso.jpg",
+    "alt": "Karya Sak Yant Purissa 04",
+    "id": "04-vertical-side-torso",
+    "title": "Vertical side torso",
+    "kind": "gallery",
+    "caption": "",
+    "position": 3
+  },
+  {
+    "src": "/assets/gallery/05-chest-sacred-symbols.jpg",
+    "alt": "Karya Sak Yant Purissa 05",
+    "id": "05-chest-sacred-symbols",
+    "title": "Chest sacred symbols",
+    "kind": "gallery",
+    "caption": "",
+    "position": 4
+  },
+  {
+    "src": "/assets/gallery/06-standing-figure-upper-arm.jpg",
+    "alt": "Karya Sak Yant Purissa 06",
+    "id": "06-standing-figure-upper-arm",
+    "title": "Standing figure upper arm",
+    "kind": "gallery",
+    "caption": "",
+    "position": 5
+  },
+  {
+    "src": "/assets/gallery/07-red-winged-figure.jpg",
+    "alt": "Karya Sak Yant Purissa 07",
+    "id": "07-red-winged-figure",
+    "title": "Red winged figure",
+    "kind": "gallery",
+    "caption": "",
+    "position": 6
+  },
+  {
+    "src": "/assets/gallery/08-radial-geometric-symbols.jpg",
+    "alt": "Karya Sak Yant Purissa 08",
+    "id": "08-radial-geometric-symbols",
+    "title": "Radial geometric symbols",
+    "kind": "gallery",
+    "caption": "",
+    "position": 7
+  },
+  {
+    "src": "/assets/gallery/09-dragon-leg-panel.jpg",
+    "alt": "Karya Sak Yant Purissa 09",
+    "id": "09-dragon-leg-panel",
+    "title": "Dragon leg panel",
+    "kind": "gallery",
+    "caption": "",
+    "position": 8
+  },
+  {
+    "src": "/assets/gallery/10-balanced-upper-back.jpg",
+    "alt": "Karya Sak Yant Purissa 10",
+    "id": "10-balanced-upper-back",
+    "title": "Balanced upper back",
+    "kind": "gallery",
+    "caption": "",
+    "position": 9
+  },
+  {
+    "src": "/assets/gallery/11-neck-and-shoulder-script.jpg",
+    "alt": "Karya Sak Yant Purissa 11",
+    "id": "11-neck-and-shoulder-script",
+    "title": "Neck and shoulder script",
+    "kind": "gallery",
+    "caption": "",
+    "position": 10
+  },
+  {
+    "src": "/assets/gallery/12-small-upper-back-symbol.jpg",
+    "alt": "Karya Sak Yant Purissa 12",
+    "id": "12-small-upper-back-symbol",
+    "title": "Small upper back symbol",
+    "kind": "gallery",
+    "caption": "",
+    "position": 11
+  },
+  {
+    "src": "/assets/gallery/13-dense-shoulder-panel.jpg",
+    "alt": "Karya Sak Yant Purissa 13",
+    "id": "13-dense-shoulder-panel",
+    "title": "Dense shoulder panel",
+    "kind": "gallery",
+    "caption": "",
+    "position": 12
+  },
+  {
+    "src": "/assets/gallery/14-full-back-composition.jpg",
+    "alt": "Karya Sak Yant Purissa 14",
+    "id": "14-full-back-composition",
+    "title": "Full back composition",
+    "kind": "gallery",
+    "caption": "",
+    "position": 13
+  },
+  {
+    "src": "/assets/gallery/15-vertical-spine-script.jpg",
+    "alt": "Karya Sak Yant Purissa 15",
+    "id": "15-vertical-spine-script",
+    "title": "Vertical spine script",
+    "kind": "gallery",
+    "caption": "",
+    "position": 14
+  },
+  {
+    "src": "/assets/gallery/16-winged-back-composition.jpg",
+    "alt": "Karya Sak Yant Purissa 16",
+    "id": "16-winged-back-composition",
+    "title": "Winged back composition",
+    "kind": "gallery",
+    "caption": "",
+    "position": 15
+  },
+  {
+    "src": "/assets/gallery/17-seated-figure-detail.jpg",
+    "alt": "Karya Sak Yant Purissa 17",
+    "id": "17-seated-figure-detail",
+    "title": "Seated figure detail",
+    "kind": "gallery",
+    "caption": "",
+    "position": 16
+  },
+  {
+    "src": "/assets/gallery/18-script-forearm-sleeve.jpg",
+    "alt": "Karya Sak Yant Purissa 18",
+    "id": "18-script-forearm-sleeve",
+    "title": "Script forearm sleeve",
+    "kind": "gallery",
+    "caption": "",
+    "position": 17
+  },
+  {
+    "src": "/assets/gallery/19-large-back-temple-panel.jpg",
+    "alt": "Karya Sak Yant Purissa 19",
+    "id": "19-large-back-temple-panel",
+    "title": "Large back temple panel",
+    "kind": "gallery",
+    "caption": "",
+    "position": 18
+  },
+  {
+    "src": "/assets/gallery/20-tiger-detail.jpg",
+    "alt": "Karya Sak Yant Purissa 20",
+    "id": "20-tiger-detail",
+    "title": "Tiger detail",
+    "kind": "gallery",
+    "caption": "",
+    "position": 19
+  },
+  {
+    "src": "/assets/gallery/21-circular-tiger-emblem.jpg",
+    "alt": "Karya Sak Yant Purissa 21",
+    "id": "21-circular-tiger-emblem",
+    "title": "Circular tiger emblem",
+    "kind": "gallery",
+    "caption": "",
+    "position": 20
+  },
+  {
+    "src": "/assets/gallery/22-ganesha-detail.jpg",
+    "alt": "Karya Sak Yant Purissa 22",
+    "id": "22-ganesha-detail",
+    "title": "Ganesha detail",
+    "kind": "gallery",
+    "caption": "",
+    "position": 21
+  },
+  {
+    "src": "/assets/gallery/23-ornamental-upper-arm.jpg",
+    "alt": "Karya Sak Yant Purissa 23",
+    "id": "23-ornamental-upper-arm",
+    "title": "Ornamental upper arm",
+    "kind": "gallery",
+    "caption": "",
+    "position": 22
+  }
+]
